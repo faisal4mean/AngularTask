@@ -1,0 +1,12 @@
+.album_section {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 20px 20px;
+  .card {
+    border: 1px solid red;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+  }
+}

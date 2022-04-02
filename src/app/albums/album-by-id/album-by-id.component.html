@@ -1,0 +1,7 @@
+<span class="sub_header">{{ userName }}</span>
+<div class="album_section">
+  <div class="card" *ngFor="let album of getAlbumsById">
+    <h4>User ID : {{ album.userId }}</h4>
+    <p>title: {{ album.title }}</p>
+  </div>
+</div>

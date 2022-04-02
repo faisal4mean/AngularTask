@@ -1,0 +1,18 @@
+<div class="card_section">
+  <div class="card" *ngFor="let user of allUsers$ | async">
+    <h4 class="user_name">{{ user?.username }}</h4>
+    <p>Email: {{ user?.email }}</p>
+    <p>Phone: {{ user?.phone }}</p>
+    <ul class="address">
+      <li>City: {{ user?.address?.city }}</li>
+      <li>Street: {{ user?.address?.street }}</li>
+      <li>ZipCode: {{ user?.address?.zipcode }}</li>
+    </ul>
+    <div class="btn">
+      <button type="button" (click)="getUserId(user?.id)">Posts</button>
+      <button type="button" (click)="goToAlbum(user?.id, user?.username)">Go to Album</button>
+    </div>
+  </div>
+</div>
+
+<!--  Name, Email, phone/website & Address -->
